@@ -20,7 +20,7 @@
 <main class="login-register-container">
     <div class="form-container">
         <h2>Вход</h2>
-        <form action="/login" method="POST">
+        <form id = 'login-form' action="/login" method="POST">
             <label for="username">Имя пользователя</label>
             <input type="text" id="username" name="username" required placeholder="Введите имя пользователя">
             
@@ -36,6 +36,41 @@
 <footer>
     <p>&copy; 2024 Компания Стерх. Все права защищены.</p>
 </footer>
+
+<script>
+    document.getElementById('login-form').addEventListener('submit', async function(event) {
+        event.preventDefault(); // Отменяет стандартное поведение отправки формы
+
+        // Собираем данные из формы
+        const data = {
+            username: document.getElementById('username').value,
+            password: document.getElementById('password').value,
+        };
+
+        try {
+            const response = await fetch('https://localhost:7273/api/authentication/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            });
+
+            if (response.status === 201) {
+                alert('вход прошел успешно!');
+                // Перенаправление на страницу входа или другая логика
+            } else {
+                const errorData = await response.json();
+                console.log(errorData);
+                alert('Ошибка при входе');
+            }
+        } catch (error) {
+            console.error('Ошибка при подключении:', error);
+            alert('Произошла ошибка. Пожалуйста, попробуйте еще раз.');
+        }
+    });
+</script>
+
 
 </body>
 </html>
