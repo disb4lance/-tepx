@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Жалюзи, шторы, ворота</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <div class="logo">
+            <img src="logo.webp" alt="Логотип компании Стерх">
+            <h1>Стерх</h1>
+        </div>
+        
+        <!-- Кнопки входа и регистрации -->
+        <div class="auth-buttons">
+            <a href="login.html" class="button">Вход</a>
+            <a href="register.html" class="button">Регистрация</a>
+        </div>
+    </div>
+</header>
+
+<nav>
+    <a href="Классические.html">Классические</a>
+    <a href="Римские.html">Римские</a>
+    <a href="Рулонные.html">Рулонные</a>
+    <a href="Жалюзи.html">Жалюзи</a>
+</nav>
+
+<main class="container_contact">
+    <div>
+        <h1 align="center">Контакты</h1>
+        <p><strong>Телефоны:</strong></p>
+        <ul>
+            <li>+7 (4722) 56-92-36 (Белгород и область)</li>
+            <li>+7 (495) 151-88-54 (Москва и область)</li>
+        </ul>
+        <p><strong>Заказать звонок:</strong></p>
+        <p>8 (800) 775 - 48 - 54<br>Звонок бесплатный по РФ</p>
+        <p><strong>Операторы на связи (Москва):</strong><br>Пн–Пт 9:00–18:00</p>
+
+        <h2>Обратная связь</h2>
+        <form action="submit_feedback.php" method="post" style="display: flex; flex-direction: column; gap: 15px; font-size: 1.1em;">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required style="  padding: 15px; border: 1px solid #ccc; border-radius: 5px; font-size: 1.1em;">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required style="padding: 15px; border: 1px solid #ccc; border-radius: 5px; font-size: 1.1em;">
+
+            <label for="phone">Телефон для обратной связи:</label>
+            <input type="tel" id="phone" name="phone" required style="padding: 15px; border: 1px solid #ccc; border-radius: 5px; font-size: 1.1em;">
+
+            <label for="message">Сообщение:</label>
+            <textarea id="message" name="message" rows="6" required style="padding: 15px; border: 1px solid #ccc; border-radius: 5px; font-size: 1.1em;"></textarea>
+
+            <input type="submit" value="Отправить" style="padding: 15px; background-color: #ff8000; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 1.2em;">
+        </form>
+    </div>
+
+    <aside>
+        <h2>Меню</h2>
+        <ul>
+            <li><a href="page1.html" class="menu-button">О компании</a></li>
+            <li><a href="page2.html" class="menu-button">Акции</a></li>
+            <li><a href="page3.html" class="menu-button">Контакты</a></li>
+            <li><a href="index.html" class="menu-button">Главная</a></li>
+        </ul>
+
+        <input type="text" placeholder="поиск" style="width: 90%; margin-bottom: 10px;">
+        <input type="button" value="искать" style="width: 100%; font-weight: bold;">
+        <br><br>
+        <a href="https://www.ikea.com" target="_blank">
+            <img src="Без названия.png" alt="IKEA" style="width: 100%;">
+        </a>
+        <a href="https://www.walmart.com" target="_blank">
+            <img src="images.png" alt="Walmart" style="width: 100%; margin-top: 10px;">
+        </a>
+        <a href="https://www.wayfair.com" target="_blank">
+            <img src="images (1).png" alt="Wayfair" style="width: 100%; margin-top: 10px;">
+        </a>
+    </aside>
+</main>
+
+<footer>
+    <p>&copy; 2024 Компания Стерх. Все права защищены.</p>
+    <p>
+        <a href="page1.html">О компании</a> | 
+        <a href="page2.html">Акции</a> | 
+        <a href="page3.html">Контакты</a>
+    </p>
+</footer>
+
+</body>
+</html>

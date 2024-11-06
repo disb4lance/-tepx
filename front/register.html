@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <div class="logo">
+            <img src="logo.webp" alt="Логотип компании Стерх">
+            <h1>Стерх</h1>
+        </div>
+    </div>
+</header>
+
+<main class="login-register-container">
+    <div class="form-container">
+        <h2>Регистрация</h2>
+        <form id="registration-form">
+            <label for="username">Имя пользователя</label>
+            <input type="text" id="username" name="username" required placeholder="Введите имя пользователя">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="Введите email">
+
+            <label for="password">Пароль</label>
+            <input type="password" id="password" name="password" required placeholder="Введите пароль">
+
+            <label for="confirm-password">Подтвердите пароль</label>
+            <input type="password" id="confirm-password" name="confirm-password" required placeholder="Подтвердите пароль">
+            
+            <div class="agreement">
+                <input type="checkbox" id="agreement" name="agreement" required>
+                <label for="agreement">Я согласен(а) на обработку персональных данных</label>
+            </div>
+
+            <input type="submit" value="Зарегистрироваться" class="button form-button">
+        </form>
+        <p>Уже есть аккаунт? <a href="login.html">Войдите здесь</a>.</p>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2024 Компания Стерх. Все права защищены.</p>
+</footer>
+
+<script>
+    document.getElementById('registration-form').addEventListener('submit', async function(event) {
+        event.preventDefault(); // Отменяет стандартное поведение отправки формы
+
+        // Собираем данные из формы
+        const data = {
+            username: document.getElementById('username').value,
+            email: document.getElementById('email').value,
+            password: document.getElementById('password').value,
+            confirmPassword: document.getElementById('confirm-password').value
+        };
+
+        try {
+            const response = await fetch('https://localhost:7273/api/authentication', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            });
+
+            if (response.status === 201) {
+                alert('Регистрация прошла успешно!');
+                // Перенаправление на страницу входа или другая логика
+            } else {
+                const errorData = await response.json();
+                console.log(errorData);
+                alert('Ошибка при регистрации');
+            }
+        } catch (error) {
+            console.error('Ошибка при подключении:', error);
+            alert('Произошла ошибка. Пожалуйста, попробуйте еще раз.');
+        }
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,339 @@
+/* Общие стили */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Шапка сайта */
+header {
+    background-color: #ff8000;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: relative; /* Позволяет разместить элементы внутри шапки */
+}
+
+header .header-content {
+    display: flex;
+    justify-content: space-between; /* Размещает логотип и кнопки по краям */
+    align-items: center;
+    padding: 0 20px;
+}
+
+header img {
+    max-width: 100px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+/* Кнопки входа и регистрации */
+.auth-buttons {
+    display: flex;
+    gap: 10px; /* Отступ между кнопками */
+}
+
+.auth-buttons .button {
+    background-color: white; /* Цвет фона кнопок */
+    color: #ff8000; /* Цвет текста */
+    border: 2px solid #ff8000; /* Рамка кнопок */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none; /* Убирает подчеркивание */
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s; /* Плавный переход */
+}
+
+.auth-buttons .button:hover {
+    background-color: #ff9933; /* Цвет фона при наведении */
+    color: white; /* Цвет текста при наведении */
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #FFA500; /* Цвет фона меню */
+    padding: 10px 0; /* Отступы сверху и снизу */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Тень для эффекта */
+}
+
+nav .nav-button {
+    color: white; /* Цвет текста */
+    text-decoration: none; /* Убираем подчеркивание */
+    margin: 0 15px; /* Отступы между ссылками */
+    font-size: 18px; /* Размер шрифта */
+    font-weight: bold; /* Жирный шрифт */
+    padding: 10px 20px; /* Отступы для создания эффекта кнопки */
+    border-radius: 5px; /* Закругленные края */
+    transition: background-color 0.3s, transform 0.3s; /* Плавный переход для фона и трансформации */
+}
+
+nav .nav-button:hover {
+    background-color: #ff9933; /* Цвет фона при наведении */
+    transform: scale(1.05); /* Увеличение размера при наведении */
+}
+
+nav a {
+    color: white; /* Цвет текста */
+    text-decoration: none; /* Убираем подчеркивание */
+    margin: 0 20px; /* Отступы между ссылками */
+    font-size: 18px; /* Размер шрифта */
+    font-weight: bold; /* Жирный шрифт */
+    padding: 10px 15px; /* Добавлено для создания эффекта кнопки */
+    border-radius: 5px; /* Закругленные края */
+    transition: background-color 0.3s, transform 0.3s; /* Плавный переход для фона и трансформации */
+}
+
+nav a:hover {
+    background-color: #ff9933; /* Цвет фона при наведении */
+    transform: scale(1.05); /* Увеличение размера при наведении */
+}
+/* Основной контент */
+
+
+.banner-container {
+    display: flex; /* Используем флексбокс */
+    flex-direction: column; /* Выравниваем изображения вертикально */
+    align-items: flex-start; /* Выравниваем элементы по левому краю */
+    margin: 0 20px; /* Добавляем отступы слева и справа для визуального разделения */
+    width: 200px; /* Устанавливаем фиксированную ширину контейнера баннеров */
+}
+
+.banner-img {
+    width: 100%; /* Убедитесь, что изображения займут всю ширину контейнера */
+    margin-bottom: 10px; /* Отступ между изображениями */
+    border-radius: 5px; /* Закругленные края */
+}
+
+
+main img {
+    max-width: 200px;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #ff8000;
+}
+
+main p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Таблицы */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Боковая панель */
+.container {
+    display: flex; /* Используем flexbox для расположения элементов */
+    justify-content: flex-start; /* Выравнивание элементов по левому краю */
+}
+
+aside {
+    width: 200px;
+    padding: 20px;
+    background-color: #ff8000;
+    color: white;
+    text-align: left;
+    border-radius: 8px;
+    margin-right: 20px; /* Отступ между боковой панелью и основным контентом */
+}
+
+main {
+    flex: 1; /* Основной контент занимает оставшееся пространство */
+    padding: 20px;
+}
+
+aside img {
+    width: 100%; /* Изображения занимают всю ширину контейнера */
+    height: auto;
+    border-radius: 5px;
+}
+
+
+/* Footer */
+footer {
+    background-color: #ff8000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Стиль для форм */
+input[type="text"],
+input[type="button"],
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    background-color: #f9f9f9;
+}
+
+input[type="button"] {
+    background-color: #ff8000;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="button"]:hover {
+    background-color: #ff9933;
+}
+
+/* Стили для каталога */
+.catalog-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.catalog-item {
+    background-color: #f7f7f7;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.catalog-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.catalog-item h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.catalog-item p {
+    font-size: 0.95em;
+    color: #666;
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+    .catalog-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .catalog-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Стили для заголовка меню */
+h2 {
+    text-align: center; /* Выравнивание по центру */
+    margin-bottom: 15px; /* Отступ снизу */
+    font-size: 24px; /* Размер шрифта заголовка */
+    color: #333; /* Цвет заголовка */
+}
+
+/* Стили для меню */
+ul {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем отступы */
+    margin: 0; /* Убираем отступы сверху и снизу для списка */
+}
+
+/* Стили для элементов списка */
+li {
+    margin: 10px 0; /* Отступы между элементами списка */
+}
+
+/* Стили для кнопок меню */
+.menu-button {
+    display: block; /* Заставляем кнопки занимать всю ширину контейнера */
+    background-color: #FFA500; /* Цвет фона кнопки */
+    color: white; /* Цвет текста */
+    text-decoration: none; /* Убираем подчеркивание */
+    padding: 10px 15px; /* Отступы */
+    border-radius: 5px; /* Закругленные края */
+    transition: background-color 0.3s, transform 0.3s; /* Плавный переход для фона и трансформации */
+}
+
+.menu-button:hover {
+    background-color: #ff9933; /* Цвет фона при наведении */
+    transform: scale(1.05); /* Увеличение размера при наведении */
+}
+aside img {
+    max-width: 100%; /* Убедитесь, что изображения не выходят за пределы боковой панели */
+    height: auto; /* Сохраняем пропорции изображений */
+    border-radius: 5px; /* Закругленные края изображений */
+}
+
+
+
+.container_about{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.container_sales{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.container_contact{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; /* Контент займет оставшееся пространство */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto; /* Сдвигает футер вниз */
+}
