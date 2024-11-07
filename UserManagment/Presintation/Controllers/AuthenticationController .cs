@@ -41,7 +41,8 @@ namespace Presintation.Controllers
         {
             var rez = await _service.AuthenticationService.ValidateUser(user);
             //_rabbitMQProducer.SendMessage(rez);
-            return Ok(new { Message = "User registered successfully", UserId = rez });
+            //return Ok(new { Message = "User registered successfully", UserId = rez });
+            return StatusCode(201);
         }
     }
 }
