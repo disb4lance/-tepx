@@ -11,10 +11,8 @@ namespace Presintation.Controllers
     public class AuthenticationController : ControllerBase
     {
         private readonly IServiceManager _service;
-        private readonly IRabbitMQProducer _rabbitMQProducer;
-        public AuthenticationController(IServiceManager service, IRabbitMQProducer rabbitMQProducer) { 
+        public AuthenticationController(IServiceManager service) { 
             _service = service;
-            _rabbitMQProducer = rabbitMQProducer;
         } 
 
 
