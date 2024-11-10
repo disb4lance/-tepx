@@ -11,13 +11,17 @@ builder.Services.AddControllers();
 
 builder.Services.AddCors(options =>
 {
-    options.AddDefaultPolicy(options =>
-    {
-        options.WithOrigins("http://127.0.0.1:5500");
-        options.AllowAnyHeader();
-        options.AllowAnyMethod();
-    });
+    options.AddPolicy("AllowAllOrigins",
+       builder =>
+       {
+           builder.AllowAnyOrigin()
+                  .AllowAnyMethod()
+                  .AllowAnyHeader();
+       });
 });
+builder.Services.ConfigureJWT(builder.Configuration);
+
+builder.Services.ConfigureResponseCaching();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddAutoMapper(typeof(Program));
@@ -26,7 +30,6 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddAuthentication();
 builder.Services.ConfigureIdentity();
 builder.Services.AddScoped<IServiceManager, ServiceManager>();
-builder.Services.AddSingleton<IRabbitMQProducer, RabbitMQProducer>();
 
 var app = builder.Build();
 
@@ -44,7 +47,9 @@ app.UseHttpsRedirection();
 
 app.UseAuthentication();
 app.UseAuthorization();
-app.UseCors();
+app.UseCors("AllowAllOrigins");
 app.MapControllers();
+app.UseResponseCaching();
+
 
 app.Run();

@@ -39,7 +39,7 @@
 
 <script>
     document.getElementById('login-form').addEventListener('submit', async function(event) {
-        event.preventDefault(); // Отменяет стандартное поведение отправки формы
+        event.preventDefault(); // Отключаем стандартную отправку формы
 
         // Собираем данные из формы
         const data = {
@@ -56,9 +56,14 @@
                 body: JSON.stringify(data)
             });
 
-            if (response.status === 201) {
-                alert('вход прошел успешно!');
-                // Перенаправление на страницу входа или другая логика
+            if (response.ok) { // Проверка успешного ответа
+                const tokenDto = await response.json(); // Получаем тело ответа
+                localStorage.setItem('accessToken', tokenDto.accessToken); // Сохраняем accessToken в локальное хранилище
+                localStorage.setItem('refreshToken', tokenDto.refreshToken); // Сохраняем refreshToken
+
+                alert('Вход выполнен успешно!');
+                // Можно перенаправить на другую страницу
+                window.location.href = 'index.html';
             } else {
                 const errorData = await response.json();
                 console.log(errorData);
@@ -70,6 +75,7 @@
         }
     });
 </script>
+
 
 
 </body>

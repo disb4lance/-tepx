@@ -17,6 +17,8 @@ namespace Presintation.Controllers
 
 
         [HttpPost]
+        [ResponseCache(Duration = 60)]
+
         //[ServiceFilter(typeof(ValidationFilterAttribute))]
         public async Task<IActionResult> RegisterUser([FromBody] UserForRegistrationDto userForRegistration)
         {
@@ -34,13 +36,15 @@ namespace Presintation.Controllers
 
 
         [HttpPost("login")]
+
         //[ServiceFilter(typeof(ValidationFilterAttribute))]
         public async Task<IActionResult> Authenticate([FromBody] UserForAuthenticationDto user)
         {
-            var rez = await _service.AuthenticationService.ValidateUser(user);
-            //_rabbitMQProducer.SendMessage(rez);
-            //return Ok(new { Message = "User registered successfully", UserId = rez });
-            return StatusCode(201);
+            if (!await _service.AuthenticationService.ValidateUser(user))
+                return Unauthorized();
+            var tokenDto = await _service.AuthenticationService
+            .CreateToken(populateExp: true);
+            return Ok(tokenDto);
         }
     }
 }
