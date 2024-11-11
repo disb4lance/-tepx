@@ -21,6 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\catalog.Presintations\catalog.Presintations.csproj" />
     <ProjectReference Include="..\repository\repository.csproj" />
   </ItemGroup>
 

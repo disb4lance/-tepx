@@ -55,7 +55,7 @@ namespace repository.configurations
                 new curtains
                 {
                     id = new Guid("c3d4c053-49b6-410c-bc78-2d54a9991873"),
-                    name = "Шторы Neula",
+                    name = "Шторы Neula2",
                     price = 4000,
                     description = "Эти серые шторы Neula обеспечивают отличную изоляцию от света и шума, а также добавляют элегантность в любое помещение.",
                     matherial = "Вискоза",
@@ -79,7 +79,7 @@ namespace repository.configurations
                 new curtains
                 {
                     id = new Guid("e5d4c053-49b6-410c-bc78-2d54a9991875"),
-                    name = "Шторы Gura",
+                    name = "Шторы Gura2",
                     price = 3000,
                     description = "Элегантные шторы Gura в цвете кофе с молоком — идеальное решение для тех, кто ценит тепло и уют в интерьере.",
                     matherial = "Вискоза",
