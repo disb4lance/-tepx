@@ -17,9 +17,9 @@ namespace repository.configurations
             (
                 new curtains
                 {
-                    id = new Guid("c9d4c053-49b6-410c-bc78-2d54a9991870"),
+                    id = Guid.NewGuid(),
                     name = "Портьера велюр Марсель",
-                    price = 3000,
+                    price = 5200,
                     description = "Портьера велюр Марсель — это элегантные шторы из высококачественного велюра, " +
                     "идеально подходящие для создания уютной атмосферы в вашем доме. Шторы прекрасно блокируют свет и сохраняют тепло.",
                     matherial = "Велюр",
@@ -30,7 +30,7 @@ namespace repository.configurations
                 },
                 new curtains
                 {
-                    id = new Guid("a1d4c053-49b6-410c-bc78-2d54a9991871"),
+                    id = Guid.NewGuid(),
                     name = "Шторы Neula",
                     price = 3500,
                     description = "Шторы Neula сочетают в себе современный дизайн и высокую функциональность. Эти бежевые шторы добавят стильный акцент вашему интерьеру, блокируя яркий свет.",
@@ -42,7 +42,7 @@ namespace repository.configurations
                 },
                 new curtains
                 {
-                    id = new Guid("b2d4c053-49b6-410c-bc78-2d54a9991872"),
+                    id = Guid.NewGuid(),
                     name = "Шторы Dubley",
                     price = 2800,
                     description = "Шторы Dubley — это стильное решение для вашего интерьера. Они прекрасно смотрятся в любом помещении и создают атмосферу уюта и комфорта.",
@@ -54,7 +54,7 @@ namespace repository.configurations
                 },
                 new curtains
                 {
-                    id = new Guid("c3d4c053-49b6-410c-bc78-2d54a9991873"),
+                    id = Guid.NewGuid(),
                     name = "Шторы Neula2",
                     price = 4000,
                     description = "Эти серые шторы Neula обеспечивают отличную изоляцию от света и шума, а также добавляют элегантность в любое помещение.",
@@ -66,7 +66,7 @@ namespace repository.configurations
                 },
                 new curtains
                 {
-                    id = new Guid("d4d4c053-49b6-410c-bc78-2d54a9991874"),
+                    id = Guid.NewGuid(),
                     name = "Шторы Gura",
                     price = 3200,
                     description = "Шторы Gura привнесут утонченность и стиль в ваш дом. Они идеально подойдут для гостиной или спальни.",
@@ -78,9 +78,9 @@ namespace repository.configurations
                 },
                 new curtains
                 {
-                    id = new Guid("e5d4c053-49b6-410c-bc78-2d54a9991875"),
+                    id = Guid.NewGuid(),
                     name = "Шторы Gura2",
-                    price = 3000,
+                    price = 3100,
                     description = "Элегантные шторы Gura в цвете кофе с молоком — идеальное решение для тех, кто ценит тепло и уют в интерьере.",
                     matherial = "Вискоза",
                     color = "Кофе с молоком",
