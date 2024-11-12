@@ -92,7 +92,7 @@ namespace Services
         {
             var claims = new List<Claim>
             {
-                 new Claim(ClaimTypes.Name, _user.UserName) // Добавляет claim с именем пользователя.
+                 new Claim(ClaimTypes.NameIdentifier, _user.Id.ToString()) // Claim с ID пользователя
             };
             return claims;
         }
