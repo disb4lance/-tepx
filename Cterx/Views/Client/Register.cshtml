@@ -1,0 +1,144 @@
+﻿@using OnlineStrore.Dto
+@model CreateClientDto
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f9f9f9;
+        }
+
+        #registerModal {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.6);
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        .modal-content {
+            background: #ffffff;
+            padding: 25px 35px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: left;
+            width: 400px;
+        }
+
+            .modal-content h2 {
+                margin-bottom: 20px;
+                font-size: 24px;
+                color: #333;
+                text-align: center;
+            }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        input[type="text"], input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #0073e6;
+            color: #ffffff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+            button:hover {
+                background-color: #005bb5;
+            }
+
+        .validation-summary-errors {
+            color: red;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #0073e6;
+            text-decoration: none;
+        }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+    </style>
+</head>
+<body>
+    <div id="registerModal" class="modal-reg">
+        <div class="modal-content">
+            <h2>Регистрация</h2>
+            @Html.ValidationSummary(true, null, new { @class = "validation-summary-errors" })
+
+            <form asp-action="CreateClient" asp-controller="Client" method="post">
+                <label>Имя</label>
+                <input type="text" asp-for="Name" required>
+                @Html.ValidationMessageFor(x => x.Name)
+
+                <label>Email</label>
+                <input type="email" asp-for="Email" required>
+                @Html.ValidationMessageFor(x => x.Email)
+
+                <label>Ваш телефон:</label>
+                <input type="text" asp-for="PhoneNubmer" required>
+                @Html.ValidationMessageFor(x => x.PhoneNubmer)
+
+                <label>Пароль</label>
+                <input type="text" asp-for="Password" required>
+                @Html.ValidationMessageFor(x => x.Password)
+
+                <label>Повторите пароль</label>
+                <input type="text" asp-for="ConnfigurePasswrod" required>
+                @Html.ValidationMessageFor(x => x.ConnfigurePasswrod)
+
+                <input type="checkbox" id="offers" name="offers">
+                <label for="offers">Получать информацию об акциях и скидках</label>
+
+                <input type="checkbox" id="privacy" name="privacy" required>
+                <label for="privacy">
+                    Я ознакомлен и согласен с условиями и даю согласие на обработку
+                    персональных данных.
+                    <a href="file:///C:/Users/ivans/Downloads/%D0%9D%D0%BE%D0%B2%D1%8B%D0%B9%20%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82.pdf" target="_blank">Политика конфиденциальности</a>
+                </label>
+
+                <button type="submit">Зарегистрироваться</button>
+            </form>
+        </div>
+    </div>
+</body>

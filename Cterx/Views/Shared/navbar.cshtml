@@ -1,0 +1,149 @@
+﻿<style>
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 10px 20px;
+        background-color: #333;
+    }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 0 10px;
+            padding: 8px 12px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+            nav a:hover {
+                background-color: #555;
+                color: #f1c40f;
+            }
+
+    .search {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+        .search input {
+            width: 240px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+            transition: border-color 0.3s ease;
+        }
+
+            .search input:focus {
+                border-color: #3498db;
+                outline: none;
+                box-shadow: 0 0 8px rgba(52, 152, 219, 0.5);
+            }
+
+        .search button {
+            padding: 10px;
+            margin-left: 8px;
+            border: none;
+            background-color: #3498db;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s ease;
+        }
+
+            .search button:hover {
+                background-color: #2980b9;
+            }
+
+    .search-results {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        display: none;
+    }
+
+        .search-results.active {
+            display: block;
+        }
+
+    .search-results-header {
+        padding: 10px;
+        background-color: #f9f9f9;
+        border-bottom: 1px solid #ddd;
+        font-weight: bold;
+        font-size: 14px;
+        color: #333;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+        .search-results-header .close-button {
+            background: none;
+            border: none;
+            font-size: 18px;
+            color: #888;
+            cursor: pointer;
+        }
+
+            .search-results-header .close-button:hover {
+                color: #333;
+            }
+
+    .search-results ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        max-height: 200px;
+        overflow-y: auto;
+    }
+
+        .search-results ul li {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+            .search-results ul li:last-child {
+                border-bottom: none;
+            }
+
+            .search-results ul li a {
+                text-decoration: none;
+                color: #3498db;
+                display: block;
+                transition: background-color 0.3s ease, color 0.3s ease;
+            }
+
+                .search-results ul li a:hover {
+                    background-color: #f0f0f0;
+                    color: #2c3e50;
+                }
+</style>
+
+<nav>
+    <a href="@Url.Action("Catalog", "Product", new{TypeName = "Классические шторы"})">Классические шторы</a>
+    <a href="@Url.Action("Catalog", "Product", new{TypeName = "Римские шторы"})">Римские шторы</a>
+    <a href="@Url.Action("Catalog", "Product", new{TypeName = "Рулонные шторы"})">Рулонные шторы</a>
+    <a href="@Url.Action("Catalog", "Product", new{TypeName = "Японские панели"})">Японские панели</a>
+    <div class="search">
+        <input type="text" id="searchInput" placeholder="Поиск по сайту..." />
+        <button type="button" id="clearButton">✖️</button>
+        <div id="searchResults" class="search-results">
+            <div class="search-results-header">
+                <span>Результаты поиска</span>
+                <button class="close-button">✖️</button>
+            </div>
+            <ul class="resultsList" id="resultsList"></ul>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,109 @@
+﻿@using OnlineStrore.Controllers
+@using OnlineStrore.Dto
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@model LoginClientDto
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Вход</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f9;
+        }
+
+        #loginModal {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.6);
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        .modal-content {
+            background: #ffffff;
+            padding: 20px 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 300px;
+        }
+
+            .modal-content h2 {
+                margin-bottom: 20px;
+                font-size: 24px;
+                color: #333;
+            }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+            text-align: left;
+        }
+
+        input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #0073e6;
+            color: #ffffff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+            button:hover {
+                background-color: #005bb5;
+            }
+
+        .validation-summary-errors {
+            color: red;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="loginModal">
+        <div class="modal-content">
+            <h2>Войти</h2>
+            @Html.ValidationSummary(true, null, new { @class = "validation-summary-errors" })
+            <form asp-action="LoginClient" asp-controller="Client" method="post">
+                <label>Email</label>
+                <input type="email" asp-for="Email" required />
+                @Html.ValidationMessageFor(x => x.Email)
+
+                <label>Пароль</label>
+                <input type="Password" asp-for="Password" required />
+                @Html.ValidationMessageFor(x => x.Password)
+
+                <button type="submit">Войти</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

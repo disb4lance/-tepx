@@ -1,0 +1,71 @@
+﻿@using OnlineStrore.ViewModels
+<!DOCTYPE html>
+
+
+
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - Стерх</title>
+
+    <link href="@Url.Content("~/css/styles.css")" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <table width="100%" cellpadding="0" cellspacing="0">
+            <tr>
+                @if (ViewData["clientName"] == null)
+                {
+                    <td>
+                        <button><a href="@Url.Action("Login", "Client")"> Войти</a></button>
+                        <button><a href="@Url.Action("Create", "Client")"> Регистрация</a></button>
+                    </td>
+                }
+                else
+                {
+                    <td>
+                        <h2>@ViewData["clientName"].ToString()</h2>
+                    </td>
+                    <td>
+                        <button onclick="showCartModal()">
+                                Корзина 
+                                (<span id="cart-count" class="cart-count"></span>)
+                        </button>                     
+                        <button><a href="@Url.Action("Feedback", "Client")">Оставить отзыв</a></button>
+
+                        <button><a href="@Url.Action("Logout", "Client")"> Выйти</a></button>
+                    </td>
+                }
+                <td align="Стерх">
+                    <img src="https://storage.yandexcloud.net/web-cterx/logo.jpg" alt="ЛОГОТИП" height="120">
+                </td>
+                <td align="left">
+                    <h1>Стерх</h1>
+                </td>
+            </tr>
+        </table>
+    </header>
+
+    @Html.Partial("~/Views/Shared/navbar.cshtml")
+
+    <div class="main-content">
+        @Html.Partial("~/Views/Shared/sidebar.cshtml")
+        <div class="content">
+            @RenderBody()
+        </div>
+    </div>
+
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="hideCartModal()">&times;</span>
+            <h2>Ваша корзина</h2>
+            <div id="cartItems">
+            </div>
+        </div>
+    </div>
+    @Html.Partial("~/Views/Shared/footer.cshtml")
+
+    <script src="~/js/scripts.js"></script>
+</body>
+</html>

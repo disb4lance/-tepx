@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cterx", "Cterx\Cterx.csproj", "{3A589A89-DF92-463D-809A-25FE2E57C1F3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cterx.Logic", "Cterx.Logic\Cterx.Logic.csproj", "{7CB1A601-EBBD-4396-8C87-13A90E1ACB96}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cterx.MS_SQL", "Cterx.MS_SQL\Cterx.MS_SQL.csproj", "{5E3A1BC6-CCF2-4909-9BB7-4F94843BD92F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A589A89-DF92-463D-809A-25FE2E57C1F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A589A89-DF92-463D-809A-25FE2E57C1F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A589A89-DF92-463D-809A-25FE2E57C1F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A589A89-DF92-463D-809A-25FE2E57C1F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CB1A601-EBBD-4396-8C87-13A90E1ACB96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CB1A601-EBBD-4396-8C87-13A90E1ACB96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CB1A601-EBBD-4396-8C87-13A90E1ACB96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CB1A601-EBBD-4396-8C87-13A90E1ACB96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E3A1BC6-CCF2-4909-9BB7-4F94843BD92F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E3A1BC6-CCF2-4909-9BB7-4F94843BD92F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E3A1BC6-CCF2-4909-9BB7-4F94843BD92F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E3A1BC6-CCF2-4909-9BB7-4F94843BD92F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DF02A500-E9EC-4B5C-A6C5-9F27D6D47F1E}
+	EndGlobalSection
+EndGlobal

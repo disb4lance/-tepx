@@ -1,0 +1,153 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\ivans\\OneDrive\\Рабочий стол\\OnlineStrore\\OnlineStrore\\wwwroot\\css\\styles.css",
+      "PackagePath": "staticwebassets\\css\\styles.css"
+    },
+    {
+      "Id": "C:\\Users\\ivans\\OneDrive\\Рабочий стол\\OnlineStrore\\OnlineStrore\\wwwroot\\images\\adres.jpg",
+      "PackagePath": "staticwebassets\\images\\adres.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ivans\\OneDrive\\Рабочий стол\\OnlineStrore\\OnlineStrore\\wwwroot\\images\\bed1.jpg",
+      "PackagePath": "staticwebassets\\images\\bed1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ivans\\OneDrive\\Рабочий стол\\OnlineStrore\\OnlineStrore\\wwwroot\\images\\bed2.jpg",
+      "PackagePath": "staticwebassets\\images\\bed2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ivans\\OneDrive\\Рабочий стол\\OnlineStrore\\OnlineStrore\\wwwroot\\images\\catalog_bed1.jpg",
+      "PackagePath": "staticwebassets\\images\\catalog_bed1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ivans\\OneDrive\\Рабочий стол\\OnlineStrore\\OnlineStrore\\wwwroot\\images\\catalog_bed2.jpg",
+      "PackagePath": "staticwebassets\\images\\catalog_bed2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ivans\\OneDrive\\Рабочий стол\\OnlineStrore\\OnlineStrore\\wwwroot\\images\\catalog_bed3.jpg",
+      "PackagePath": "staticwebassets\\images\\catalog_bed3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ivans\\OneDrive\\Рабочий стол\\OnlineStrore\\OnlineStrore\\wwwroot\\images\\catalog_bed4.jpg",
+      "PackagePath": "staticwebassets\\images\\catalog_bed4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ivans\\OneDrive\\Рабочий стол\\OnlineStrore\\OnlineStrore\\wwwroot\\images\\closet1.jpg",
+      "PackagePath": "staticwebassets\\images\\closet1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ivans\\OneDrive\\Рабочий стол\\OnlineStrore\\OnlineStrore\\wwwroot\\images\\closet2.jpg",
+      "PackagePath": "staticwebassets\\images\\closet2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ivans\\OneDrive\\Рабочий стол\\OnlineStrore\\OnlineStrore\\wwwroot\\images\\closet3.jpg",
+      "PackagePath": "staticwebassets\\images\\closet3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ivans\\OneDrive\\Рабочий стол\\OnlineStrore\\OnlineStrore\\wwwroot\\images\\closet4.jpg",
+      "PackagePath": "staticwebassets\\images\\closet4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ivans\\OneDrive\\Рабочий стол\\OnlineStrore\\OnlineStrore\\wwwroot\\images\\kitchen1.jpg",
+      "PackagePath": "staticwebassets\\images\\kitchen1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ivans\\OneDrive\\Рабочий стол\\OnlineStrore\\OnlineStrore\\wwwroot\\images\\kitchen2.jpg",
+      "PackagePath": "staticwebassets\\images\\kitchen2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ivans\\OneDrive\\Рабочий стол\\OnlineStrore\\OnlineStrore\\wwwroot\\images\\kitchen3.jpg",
+      "PackagePath": "staticwebassets\\images\\kitchen3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ivans\\OneDrive\\Рабочий стол\\OnlineStrore\\OnlineStrore\\wwwroot\\images\\kitchen4.jpg",
+      "PackagePath": "staticwebassets\\images\\kitchen4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ivans\\OneDrive\\Рабочий стол\\OnlineStrore\\OnlineStrore\\wwwroot\\images\\new_bed_1.jpg",
+      "PackagePath": "staticwebassets\\images\\new_bed_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ivans\\OneDrive\\Рабочий стол\\OnlineStrore\\OnlineStrore\\wwwroot\\images\\new_bed_2.jpg",
+      "PackagePath": "staticwebassets\\images\\new_bed_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ivans\\OneDrive\\Рабочий стол\\OnlineStrore\\OnlineStrore\\wwwroot\\images\\sofa1.jpg",
+      "PackagePath": "staticwebassets\\images\\sofa1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ivans\\OneDrive\\Рабочий стол\\OnlineStrore\\OnlineStrore\\wwwroot\\images\\sofa2.jpg",
+      "PackagePath": "staticwebassets\\images\\sofa2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ivans\\OneDrive\\Рабочий стол\\OnlineStrore\\OnlineStrore\\wwwroot\\images\\sofa3.jpg",
+      "PackagePath": "staticwebassets\\images\\sofa3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ivans\\OneDrive\\Рабочий стол\\OnlineStrore\\OnlineStrore\\wwwroot\\images\\sofa4.jpg",
+      "PackagePath": "staticwebassets\\images\\sofa4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ivans\\OneDrive\\Рабочий стол\\OnlineStrore\\OnlineStrore\\wwwroot\\images\\table1.jpg",
+      "PackagePath": "staticwebassets\\images\\table1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ivans\\OneDrive\\Рабочий стол\\OnlineStrore\\OnlineStrore\\wwwroot\\images\\table2.jpg",
+      "PackagePath": "staticwebassets\\images\\table2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ivans\\OneDrive\\Рабочий стол\\OnlineStrore\\OnlineStrore\\wwwroot\\images\\Столплит-новый-лого.jpg",
+      "PackagePath": "staticwebassets\\images\\Столплит-новый-лого.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ivans\\OneDrive\\Рабочий стол\\OnlineStrore\\OnlineStrore\\wwwroot\\images\\Хоф.jpg",
+      "PackagePath": "staticwebassets\\images\\Хоф.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ivans\\OneDrive\\Рабочий стол\\OnlineStrore\\OnlineStrore\\wwwroot\\images\\диванру.jpg",
+      "PackagePath": "staticwebassets\\images\\диванру.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ivans\\OneDrive\\Рабочий стол\\OnlineStrore\\OnlineStrore\\wwwroot\\images\\лемана.jpg",
+      "PackagePath": "staticwebassets\\images\\лемана.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ivans\\OneDrive\\Рабочий стол\\OnlineStrore\\OnlineStrore\\wwwroot\\images\\мебель.jpg",
+      "PackagePath": "staticwebassets\\images\\мебель.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ivans\\OneDrive\\Рабочий стол\\OnlineStrore\\OnlineStrore\\wwwroot\\images\\мебель2.jpg",
+      "PackagePath": "staticwebassets\\images\\мебель2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ivans\\OneDrive\\Рабочий стол\\OnlineStrore\\OnlineStrore\\wwwroot\\images\\шкаф1.jpg",
+      "PackagePath": "staticwebassets\\images\\шкаф1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ivans\\OneDrive\\Рабочий стол\\OnlineStrore\\OnlineStrore\\wwwroot\\images\\шкаф2.jpg",
+      "PackagePath": "staticwebassets\\images\\шкаф2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ivans\\OneDrive\\Рабочий стол\\OnlineStrore\\OnlineStrore\\wwwroot\\js\\scripts.js",
+      "PackagePath": "staticwebassets\\js\\scripts.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.OnlineStrore.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.OnlineStrore.props",
+      "PackagePath": "build\\OnlineStrore.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.OnlineStrore.props",
+      "PackagePath": "buildMultiTargeting\\OnlineStrore.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.OnlineStrore.props",
+      "PackagePath": "buildTransitive\\OnlineStrore.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,312 @@
+﻿/* Основные настройки */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333333;
+}
+
+h1, h2, h3 {
+    color: #4a4a4a;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555555;
+}
+
+table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #cccccc;
+}
+
+a {
+    text-decoration: none;
+    color: #0073e6;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+/* Шапка сайта */
+header {
+    background-color: #1e3a5f; /* Градиентный темно-синий фон */
+    background: linear-gradient(135deg, #1e3a5f, #4e81b5); /* Добавлен градиент */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень для эффекта */
+    border-bottom: 3px solid #003f6b; /* Контрастная нижняя граница */
+}
+
+    header img {
+        height: 70px;
+        margin-right: 15px;
+        border-radius: 5px; /* Скругление углов изображения */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Легкая тень для изображения */
+    }
+
+    header h1 {
+        color: #f1f1f1;
+        font-size: 24px; /* Увеличенный размер шрифта */
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+        letter-spacing: 1px; /* Межбуквенный интервал для стиля */
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Легкий текстовый эффект */
+    }
+
+
+/* Меню навигации */
+nav {
+    background-color: #4682b4;
+    padding: 15px 0;
+    text-align: center;
+}
+
+    nav a {
+        color: #ffffff;
+        display: inline-block;
+        padding: 12px 20px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+        nav a:hover {
+            background-color: #5a9bd4;
+        }
+
+/* Основная часть */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+/* Стили для модальных окон */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1050; /* Более высокий z-index */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Темнее фон */
+    overflow: hidden; /* Убираем прокрутку */
+    backdrop-filter: blur(5px); /* Эффект размытия */
+}
+
+.modal-content {
+    background-color: #f9f9f9; /* Более светлый фон */
+    margin: 10% auto;
+    padding: 20px 40px;
+    border-radius: 15px; /* Более сильное скругление */
+    width: 50%; /* Уменьшено для большей компактности */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Мягкая тень */
+    animation: fadeIn 0.3s ease-in-out; /* Плавная анимация появления */
+    text-align: center;
+}
+
+    .modal-content h2 {
+        color: #333333;
+        margin-bottom: 20px;
+        font-size: 24px; /* Увеличенный шрифт */
+        font-family: 'Arial', sans-serif;
+        font-weight: bold;
+        text-transform: uppercase; /* Заглавные буквы */
+    }
+
+.close {
+    color: #888888;
+    font-size: 24px;
+    font-weight: normal;
+    position: absolute; /* Абсолютное расположение */
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+    .close:hover {
+        color: #ff3b3b; /* Красный при наведении */
+    }
+
+/* Анимация появления */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Поле поиска */
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+}
+
+    .search input {
+        width: 250px;
+        padding: 12px;
+        border: 1px solid #dcdcdc;
+        border-radius: 8px;
+    }
+
+    .search button {
+        padding: 12px;
+        background-color: #0073e6;
+        color: #ffffff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+        .search button:hover {
+            background-color: #005bb5;
+        }
+
+/* Результаты поиска */
+
+/* Кнопки */
+button {
+    padding: 14px 22px;
+    font-size: 16px;
+    background-color: #4682b4;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    button:hover {
+        background-color: #5a9bd4;
+    }
+
+/* Сайдбар */
+.sidebar {
+    width: 300px;
+    background-color: #eaeaea;
+    padding: 20px;
+    border-right: 1px solid #cccccc;
+}
+
+    .sidebar a {
+        display: block;
+        color: #4a4a4a;
+        margin: 10px 0;
+        text-decoration: none;
+        font-size: 15px;
+    }
+
+        .sidebar a:hover {
+            color: #0073e6;
+        }
+
+/* Партнеры */
+.partners {
+    background-color: #ffffff;
+    padding: 25px;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    text-align: center;
+}
+
+    .partners h2 {
+        color: #333333;
+        margin-bottom: 15px;
+    }
+
+    .partners img {
+        width: 90%;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    .partners a {
+        color: #0073e6;
+        font-weight: bold;
+    }
+
+        .partners a:hover {
+            color: #005bb5;
+        }
+
+/* Каталоги */
+.catalog-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+    .catalog-item img {
+        width: 120px;
+        height: auto;
+        margin-right: 15px;
+    }
+
+    .catalog-item .text {
+        text-align: left;
+        color: #333333;
+    }
+
+.slider-container {
+    display: flex;
+    justify-content: center;
+}
+
+.slider {
+    position: relative;
+    width: 70%;
+    max-width: 800px;
+    overflow: hidden;
+    /*    border: 1px solid #ddd;*/
+}
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Центрирует по горизонтали */
+    align-items: center; /* Центрирует по вертикали */
+    flex: 0 0 100%;
+    text-align: center;
+    height: 400px; /* Задайте фиксированную высоту слайда */
+    position: relative; /* Для адаптации к тексту ниже */
+    overflow: hidden; /* Скрывает все, что выходит за границы контейнера */
+}
